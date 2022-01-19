@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content ="with=device-width, initial-scale=1.0">
+        <title>Wisata Semarang</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="https://www.instagram.com/rifkiardiann/"><img src="img/logoinstagram.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>  
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+             </nav>
+             <h1>About Us</h1>
+        </section>
+
+
+        <!---------About Us Content-------->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Kota Semarang</h1>
+                    <p>Adalah ibu kota Provinsi Jawa Tengah, Indonesia sekaligus kota metropolitan terbesar kelima di Indonesia setelah Jakarta, Surabaya, Medan, dan Bandung. 
+                    Sebagai salah satu kota paling berkembang di Pulau Jawa, Kota Semarang mempunyai jumlah penduduk sekitar 1,7 juta jiwa.</p>
+                    <p>Kawasan mega-urban Semarang yang tergabung dalam wilayah metropolitan Kedungsepur (Kendal, Demak, Ungaran, Kabupaten Semarang, Kota Salatiga, Kota Semarang dan Purwodadi, Kabupaten Grobogan) berpenduduk mencapai 7,3 juta jiwa,
+                    sekaligus sebagai wilayah metropolitan terpadat keempat di Pulau Jawa, setelah Jabodetabek (Jakarta), Gerbangkertosusilo (Surabaya), dan Bandung Raya.</p>
+                     <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <video src="img/videosemarang.mp4" controls autoplay muted></video>
+                </div>
+            </div>
+        </section>
+<!----FOOTER----->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Kami akan mengajak Anda untuk mengelilingi kota Semarang. Semarang mempunyai banyak sejarah yang menarik untuk dikunjungi <br> 
+            Dan pasti di Semarang ini memiliki spot foto yang menarik yang pasti sangat instagramable.</p>
+            <div class="icons">
+            <a href="https://www.instagram.com/rifkiardiann/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/hendrarprihadihendi"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://www.instagram.com/wisatasemarang/"><i class="fa fa-instagram"></i></a>
+            </div>
+            <p>Made With <i class="fa fa-heart-o"></i> by Muhammad Rifki Ardian</p>
+        </section>
+
+
+
+<!--JAVASCRIPT TOGGLE MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu (){
+                navLinks.style.right = "0";
+            }
+            function hideMenu () {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

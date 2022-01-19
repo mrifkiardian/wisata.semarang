@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content ="with=device-width, initial-scale=1.0">
+        <title>Wisata Semarang</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="img/logoinstagram.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <<li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>  
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+             </nav>
+             <h1>Touristm Registration</h1>
+        </section>
+
+<!-----------BLOG PAGE CONTENT-------------->
+        <section class="blog">
+            <form action="">
+                <h1>Registrasi Wisatawan</h1>
+            <input type="text" name="nama_lengkap" size="55" placeholder="Masukkan Nama Lengkap" required> <br>
+            <input type="text" name="nama_lengkap" size="55" placeholder="Masukkan Email Anda" required> <br>
+            <input type="password" placeholder="Masukkan Password Anda" required> <br>
+            <textarea name="alamat" cols="40" rows="3" placeholder="Masukkan Alamat Anda" required></textarea> <br>
+            <div class="pilihan">
+                <p class="maju"> Jenis Kelamin :</p>
+                Laki-laki <input type="radio" name="jenis_kelamin" value="L">
+                Perempuan <input type="radio" name="jenis_kelamin" value="P">
+                <p>Aktif Pada Sosial Media :</p>
+                <input type="checkbox" name="facebook" value="Ya">Tiktok<br>
+                <input type="checkbox" name="twitter" value="Ya">Instagram <br>
+                <input type="checkbox" name="instagram" value="Ya">Twitter <br>
+                <input type="checkbox" name="path" value="Ya">Facebook<br>
+                <p>Mengetahui Web Ini dari :</p>
+                <select name="info">
+                    <div class="pilih">
+                        <option selected="select">-= Pilih =-</option>		
+                        <option value="web udinus">Iklan Website</option>
+                        <option value="surat kabar">Media Sosial</option>		
+                        <option value="teman kerabat">Teman/Kerabat</option>
+                        <option value="browsing internet">Browsing Internet</option>
+                    </div>
+                </select>
+            </div>
+            <br>
+                <button type="submit" class="hero-btn red-btn">Kirim Pesan</button>  <br>
+            </form>
+
+        </section>
+<!----FOOTER----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Kami akan mengajak Anda untuk mengelilingi kota Semarang. Semarang mempunyai banyak sejarah yang menarik untuk dikunjungi <br> 
+    Dan pasti di Semarang ini memiliki spot foto yang menarik yang pasti sangat instagramable.</p>
+    <div class="icons">
+    <a href="https://www.instagram.com/rifkiardiann/"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/c/hendrarprihadihendi"><i class="fa fa-youtube-play"></i></a>
+    <a href="https://www.instagram.com/wisatasemarang/"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p>Made With <i class="fa fa-heart-o"></i> by Muhammad Rifki Ardian</p>
+  </section>
+
+
+<!--JAVASCRIPT TOGGLE MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu (){
+                navLinks.style.right = "0";
+            }
+            function hideMenu () {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
